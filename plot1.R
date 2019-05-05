@@ -1,7 +1,6 @@
 # Author: Kristijana A.
 # Exploratory Data Analysis Course Project 1
-
-library(dplyr)
+# Plot 1
 
 setwd("ExData_Plotting1")
 data_url = "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
@@ -14,7 +13,7 @@ energy_data <- read.table(data_file, header = TRUE, sep = ";")
 energy_set <- subset(energy_data, Date == "1/2/2007" | Date == "2/2/2007")
 
 #plot the histogram of Global Active Power
-# convert Global_active_power to numer
+# convert Global_active_power to numeric
 energy_set$Global_active_power <- as.numeric(as.character(
                                   energy_set$Global_active_power))
 # use png device
