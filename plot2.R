@@ -1,6 +1,6 @@
 # Author: Kristijana A.
 # Exploratory Data Analysis Course Project 1
-# Plot 1
+# Plot 2
 
 library(lubridate)
 library(dplyr)
